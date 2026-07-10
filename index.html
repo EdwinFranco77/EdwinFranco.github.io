@@ -1,17 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Link external CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website for Edwin Franco.">
+  <title>Edwin Franco</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="logo" href="#home" aria-label="Edwin Franco home">EF</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Content goes here -->
+  <main id="home">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">Personal Website</p>
+        <h1 id="hero-title">Hi, I am Edwin Franco.</h1>
+        <p class="hero-copy">
+          A clean starter page for your portfolio, projects, and contact information.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View Projects</a>
+          <a class="button secondary" href="#contact">Get in Touch</a>
+        </div>
+      </div>
+    </section>
 
-    <!-- Link external JavaScript -->
-    <script src="script.js"></script>
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="section-header">
+        <p class="eyebrow">About</p>
+        <h2 id="about-title">Build this section around your story.</h2>
+      </div>
+      <p>
+        Add a short introduction about who you are, what you are learning or building,
+        and what kind of work you want this site to highlight.
+      </p>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="section-header">
+        <p class="eyebrow">Projects</p>
+        <h2 id="projects-title">Featured work</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Project One</h3>
+          <p>Describe what the project does, the tools you used, and what you learned.</p>
+          <a href="#" aria-label="View Project One">View project</a>
+        </article>
+        <article class="project-card">
+          <h3>Project Two</h3>
+          <p>Use this space for another website, app, school project, or experiment.</p>
+          <a href="#" aria-label="View Project Two">View project</a>
+        </article>
+        <article class="project-card">
+          <h3>Project Three</h3>
+          <p>Replace these placeholders with real links when your projects are ready.</p>
+          <a href="#" aria-label="View Project Three">View project</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="section-header">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Let people know how to reach you.</h2>
+      </div>
+      <p>
+        Add your preferred email, LinkedIn, GitHub, or resume link here.
+      </p>
+      <a class="button primary" href="mailto:your.email@example.com">Email Me</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Edwin Franco. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
